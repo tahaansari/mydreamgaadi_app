@@ -10,6 +10,137 @@
    See https://github.com/apache/cordova-plugin-statusbar
 */
 
+.panel{
+	box-shadow: none!important;
+}
+
 .statusbar-overlay {
     background: #000000;
+}
+
+.navbar.theme-red, .searchbar.theme-red, .subnavbar.theme-red, .theme-red .navbar, .theme-red .searchbar, .theme-red .subnavbar, .theme-red .toolbar, .toolbar.theme-red {
+    background-color: #BA2228;
+}
+
+.theme-red .item-link.list-button, .theme-red a {
+    color: white;
+}
+
+.content-block{
+
+	margin: 55px 0 0 0;
+    padding: 0;
+}
+
+.home-tabs{
+
+	text-align: center;
+	color: white;
+	margin: 10px;
+
+}
+
+.home-tabs img{
+
+	width: 70px;
+
+}
+
+.strip{
+
+	text-align: center;
+	height: 20px;
+	background: black;
+	margin:10px 0px 10px 0px;
+	color: white;
+	padding: 5px;
+}
+
+.bg{
+
+    background: url('../img/background.png') no-repeat center center;
+    background-size: cover;
+}
+
+.list-block {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.img-round{
+
+	border-radius: 50%;
+}
+
+.home-icon{
+	
+    border-top: 1px solid white;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	
+}
+
+.home-icon img{
+	
+	width: 25px;
+	
+}
+
+
+.home-icon .col-33{
+
+	border-right: 1px solid white;
+	
+}
+
+.nav-header{
+
+	color: white;
+	margin-top: 0; 
+	background:#BA2228;
+}
+
+.panel-body{
+	padding: 10px;
+	text-align: center;
+	color: white;
+
+}
+
+.panel-body img{
+
+	
+	width: 90px;
+
+}
+
+
+.panel-body .col-50{
+
+	margin-bottom: 15px;
+
+}
+
+.text{
+
+	background: transparent;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 80%;
+    margin: 10px;
+}
+
+
+.btn{
+
+	background-color: #ba2228;
+    padding: 15px;
+    border-radius: 20px;
+    width: 87%;
+    margin: 10px;
+    border: none;
+    color: white;
 }
