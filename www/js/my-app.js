@@ -1,9 +1,22 @@
 // Initialize app
 var myApp = new Framework7({
 
-    modalTitle: 'My App',
+    modalTitle: 'MyDreamGaadi',
     material:true,
-    swipePanel:'left'
+    materialPreloaderHtml:'<span class="preloader-inner-half-circle"></span>',
+    swipePanel:'left',
+    // swipePanelNoFollow:true,
+        // Hide and show indicator during ajax requests
+    onAjaxStart: function (xhr) {
+        myApp.showIndicator();
+    },
+    onAjaxComplete: function (xhr) {
+        myApp.hideIndicator();
+    }
+    // swipePanelOnlyClose:true
+    // fastClicks:false
+    // tapHold:true
+
 
 });
 
@@ -14,15 +27,21 @@ var $$ = Dom7;
 // Add view
 var mainView = myApp.addView('.view-main', {
     // Because we want to use dynamic navbar, we need to enable it for this view:
-    dynamicNavbar: true,
     domCache:true
 });
+
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
 
 });
+
+
+// function on_click(){
+
+// 	myApp.prompt("called");
+// }
 
 
 // // Now we need to run the code that will be executed only for About page.

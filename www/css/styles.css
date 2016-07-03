@@ -9,6 +9,10 @@
 
    See https://github.com/apache/cordova-plugin-statusbar
 */
+body{
+
+	color: white;
+}
 
 .panel{
 	box-shadow: none!important;
@@ -28,7 +32,6 @@
 
 .content-block{
 
-	margin: 55px 0 0 0;
     padding: 0;
 }
 
@@ -63,7 +66,9 @@
 }
 
 .list-block {
-    margin: 15px 0;
+
+	color: black;
+    margin: 0;
     font-size: 14px;
 }
 
@@ -129,18 +134,67 @@
     border-radius: 20px;
     padding: 10px;
     color: white;
-    width: 80%;
+    width: 70%;
     margin: 10px;
 }
 
 
 .btn{
 
-	background-color: #ba2228;
-    padding: 15px;
+	    background-color: #ba2228;
+    padding: 13px;
     border-radius: 20px;
-    width: 87%;
+    width: 77%;
     margin: 10px;
     border: none;
     color: white;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+.content-block{
+	margin: 0;
+}
+
+.panel{
+background:rgba(0, 0, 0, 0.48);
+
+}
+
+.cust-card{
+	
+    background-color: #eaeaea;
+    color: black;
+    border-radius: 0;
+}
+
+.cust-card .card-content-inner{
+	
+    background-color: white;
+}
+
+.card-header {
+    border-radius: 0;
+  
+}
+.cust-btn{
+
+	border-radius: 0!important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
