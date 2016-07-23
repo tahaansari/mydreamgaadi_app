@@ -39,15 +39,15 @@ body{
 
 	text-align: center;
 	color: white;
-	margin: 10px;
+	margin: 5px 5px;
 
 }
 
-.home-tabs img{
+/*.home-tabs img{
 
 	width: 70px;
 
-}
+}*/
 
 .strip{
 
@@ -113,12 +113,12 @@ body{
 
 }
 
-.panel-body img{
+/*.panel-body img{
 
 	
 	width: 90px;
 
-}
+}*/
 
 
 .panel-body .col-50{
@@ -197,4 +197,14 @@ background:rgba(0, 0, 0, 0.48);
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.no-mar-pad{
+
+	margin:0;
+	padding:0;
+}
+
+.page-content{
+
+	margin-top: 56px;
 }
