@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    
+    <title>MDG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="theme-red">
+
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+
+    <div class="panel panel-left panel-cover">
+
+         <div class="view" data-page="panel-left">
+            <div class="pages">
+
+                <div class="navbar" style="height: 175px;">
+                    <div class="row" style="padding-top: 20px">
+                        <div class="col-50" style="text-align:center">
+                            <img class="img-circle" width="100px" height="100px" src="img/user.jpg">
+                        </div>
+                        <div class="col-50">
+                                <p style="margin-bottom:0px">Taha Ansari</p>
+                                <small>Dealer</small>
+                        </div>
+
+                    </div>
+                    <div class="row nav-tool">
+                      <div class="col-33"><img src="img/nav/home.png"></div>
+                      <div class="col-33"><img src="img/nav/setting.png"></div>
+                      <div class="col-33"><img src="img/nav/logout.png"></div>                      
+                    </div>
+                </div>
+
+               
+                  <div class="page-content" style="background: rgba(0, 0, 0, 0);padding:0;">
+
+                   
+                    <div class="panel-body" style="background-color:rgba(0, 0, 0, 0.5);margin-bottom: 15px;">
+
+                       <div class="row no-gutter">
+                          <div class="col-50">
+                             <img src="img/nav/buy.png"><br><span>Buy Car</span>
+                          </div>
+                          <div class="col-50">
+                             <img src="img/nav/sell.png"><br><span>Sell Car</span>
+                          </div>
+                          <div class="col-50">
+                             <img src="img/nav/new.png"><br><span>New Cars</span>
+                          </div>
+                          <div class="col-50">
+                             <img src="img/nav/compare.png"><br><span>Compare Cars</span>
+                          </div>
+                          <div class="col-50">
+                             <img src="img/nav/expert.png"><br><span>Expert Advice</span>
+                          </div>
+                          <div class="col-50">
+                             <img src="img/nav/dealer.png"><br><span>Car Dealers</span>
+                          </div>
+                          <div class="col-50">
+                             <img src="img/nav/favorite.png"><br><span>Favorites</span>
+                          </div>
+                          <div class="col-50">
+                             <img src="img/nav/mechanic.png"><br><span>Find Mechanic</span>
+                          </div>
+
+
+
+                       </div>
+                    </div>
+                 </div>
+            </div>
+
+         </div>
+      </div>
+
+
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+          
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages">
+
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+
+
+                    <!-- Top Navbar-->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                            <div class="left"></div>
+                            <div class="center">MyDreamGaadi</div>
+                            <div class="right">
+                                <!--
+                                  Right link contains only icon - additional "icon-only" class
+                                  Additional "open-panel" class tells app to open panel when we click on this link
+                                -->
+                                <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block bg">   
+                            <img src="img/home.png" width="100%">
+                                <div class="row no-gutter home-tabs">
+                                    <div class="col-25">
+                                    <a href="buyused.html"><img src="img/nav/buy.png"></a>
+                                    <span>Buy</span></div>
+                                    <div class="col-25">
+                                    <a href="login.html"><img src="img/nav/sell.png"></a>                                    <span>Sell</span></div>
+                                    <div class="col-25">
+                                    <a href="newcar.html"><img src="img/nav/new.png"></a>
+                                    <span>New</span></div>
+                                    <div class="col-25">
+
+                                    <a href="verification.html"><img src="img/nav/compare.png"></a>
+                                    
+                                    <span>Compare</span></div>
+
+                                </div>   
+                               
+                            <!-- Link to another page -->
+                            <div class="strip">Latest News</div>
+                        </div>
+
+                        <div class="list-block media-list">
+                            <ul>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="img/slide1.png" width="120"></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title">Yellow Submarine</div>
+                                    <!-- <div class="item-after">$15</div> -->
+                                  </div>
+                                  <div class="item-subtitle">Beatles</div>
+                                  <div class="item-text">Lorem ipsum dolor sit amet</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="img/slide1.png" width="120"></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title">Yellow Submarine</div>
+                                    <!-- <div class="item-after">$15</div> -->
+                                  </div>
+                                  <div class="item-subtitle">Beatles</div>
+                                  <div class="item-text">Lorem ipsum dolor sit amet</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="img/slide1.png" width="120"></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title">Yellow Submarine</div>
+                                    <!-- <div class="item-after">$15</div> -->
+                                  </div>
+                                  <div class="item-subtitle">Beatles</div>
+                                  <div class="item-text">Lorem ipsum dolor sit amet</div>
+                                </div>
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="img/slide1.png" width="120"></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title">Yellow Submarine</div>
+                                    <!-- <div class="item-after">$15</div> -->
+                                  </div>
+                                  <div class="item-subtitle">Beatles</div>
+                                  <div class="item-text">Lorem ipsum dolor sit amet</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="img/slide1.png" width="120"></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title">Yellow Submarine</div>
+                                    <!-- <div class="item-after">$15</div> -->
+                                  </div>
+                                  <div class="item-subtitle">Beatles</div>
+                                  <div class="item-text">Lorem ipsum dolor sit amet</div>
+                                </div>
+                              </a>
+                            </li>
+                            </ul>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+    </div>
+
+    
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</body>
+
+</html>
